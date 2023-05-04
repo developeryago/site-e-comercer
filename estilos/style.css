@@ -35,12 +35,20 @@ header{
 h1{
     color: var(--cor05);
 }
-.logo{
-    width: 45px;
+#burguer{
+    display: block;
+    justify-content: right;
+    text-align: center;
+    padding: 5px;
+}
+
+#burguer:hover{
+    cursor: pointer;
+    color: var(--cor02);
 }
 .nav-menu{
     list-style: none;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
 }
 .nav-menu li a{
@@ -54,9 +62,6 @@ h1{
     border-radius: 10px;
     border-bottom: 3px solid var(--cor04);
 }
-main{
-    padding: 0 2em;
-}
 /*flex box*/
 .title{
     padding: .5em;
@@ -65,6 +70,52 @@ main{
     font-size: 1.1em;
     color: var(--cor04);
 }
+
+div.container-slides{
+    margin: 0 auto;
+    width: 98vw;
+    overflow: hidden;
+    padding: 0;
+}
+div.slides{
+    width: 400%;
+    display: flex;
+    position: relative;
+}
+div.slides input{
+    display: none;
+}
+div.slide{
+    width: 25%;
+    position: relative;
+}
+div.slide img{
+    width: 98vw;
+}
+div.manual-nav{
+    position: absolute;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+}
+div.manual-nav label{
+    border: 2px solid var(--cor04);
+    width: 5px;
+    height: .5vh;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 .17em;
+    transition: 1s;
+}
+div.manual-nav label:hover{
+    border: 2px solid var(--cor03);
+    background-color: var(--cor04);
+}
+#radio01:checked{margin-left: 0;}
+#radio02:checked{margin-left: -25%;}
 div.container{
     margin: 0 auto;
     justify-content: center;
