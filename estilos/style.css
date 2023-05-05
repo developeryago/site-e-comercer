@@ -57,7 +57,7 @@ h1{
     padding:  .5em 1em;
     font-size: 1.05em;
 }
-.nav-menu li a:hover{
+.nav-menu li a:hover, #bag:hover{
     background-color: var(--cor02);
     border-radius: 10px;
     border-bottom: 3px solid var(--cor04);
@@ -95,7 +95,7 @@ div.slide img{
 }
 div.manual-nav{
     position: absolute;
-    margin-top: -40px;
+    margin-top: -25px;
     display: flex;
     justify-content: center;
     width: 98vw;
@@ -103,7 +103,7 @@ div.manual-nav{
 }
 .manual-bnt{
     border: 2px solid var(--cor04);
-    padding: 5px;
+    padding: 3px;
     border-radius: 15px;
     cursor: pointer;
     margin: 0 .17em;
@@ -119,16 +119,17 @@ div.manual-nav{
 
 
 /*flex box*/
-div.container{
+div.container-categoria{
     margin: 0 auto;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 1.1em;
+    border-radius: 50%;
 }
 .imgCat{
-    width: 400px;
-    height: 293px;
+    width: 20vw;
+
 }
 .categoria{
     max-width: 400px;
@@ -137,25 +138,29 @@ div.container{
     overflow: hidden;
 }
 .titleCat{
-    font-size: 1.7em;
+    font-size: .8em;
     text-indent: 4px;
-}
-.descCat{
-    text-align: justify;
-    padding: 4px;
-    text-indent: 4px;
+    text-align: center;
 }
 .bntLink{
     text-decoration: none;
     color: var(--cor04);
 }
-.bntCat{
+
+div.container-produtos{
+    margin: 0 auto;
     display: flex;
-    justify-content: right;
-    margin: 5px; 
-    font-weight: bold;
-    text-transform: uppercase;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
-.bntCat:hover{
-    transform: translateY(-2px);
+div.produtos img{
+    max-width: 300px;
+    height: 20vh;
+}
+div.produtos{
+    max-width: 300px;
+    max-height: 500px;
+    background: var(--cor02);
+    overflow: hidden;
 }
