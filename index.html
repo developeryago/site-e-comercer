@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Flex Shop</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css" media="screen">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
@@ -16,21 +14,13 @@
         <div>
             <a href="index.html"><h1>Flex Shop</h1></a>
         </div>
-        <ul class="nav-menu" id="itens">
-            <li>
-                <a href="index.html">Início</a>
-            </li>
-            <li>
+        <a href="#" class="icon">&#9776;</a>
+            <nav class="menu">
+                <a href="index.html">Home</a>
                 <a href="pags/mais-vendidos.html">Mais vendidos</a>
-            </li>
-            <li>
-                <a href="">Quem somos?</a>
-            </li>
-            <li>
-                <i><span id="bag" class="material-symbols-outlined">shopping_bag</span></i>
-            </li>
-        </ul>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+            </nav>
     </header>
     <main>
         <div class="container-slides">
@@ -63,8 +53,10 @@
         <p class="title">Entre na categoria que deseja!</p>
         <div class="container-categoria">
             <div class="categoria">
-                <img class="imgCat" src="img/esportes.jpg" alt="esportes">
-                <p class="titleCat">Esportes</p>
+                <a href="pags/calçados.html">
+                    <img class="imgCat" src="img/esportes.jpg" alt="esportes">
+                    <p class="titleCat">Calçados</p>
+                </a>
             </div>
             <div class="categoria">
                 <img class="imgCat" src="img/eletrônicos.jpg" alt="eletrõnicos">
@@ -72,7 +64,7 @@
             </div>
             <div class="categoria">
                 <img class="imgCat" src="img/cozinha.jpg" alt="cozinha">
-                <p class="titleCat">Casa & Cozinha</p>
+                <p class="titleCat">Cozinha</p>
             </div>
             <div class="categoria">
                 <img class="imgCat" src="img/vestuário.jpg" alt="vestuário">
@@ -89,9 +81,9 @@
                 <p class="valor">R$299,99</p>
             </div>
             <div class="produtos">
-                <img src="img/calçados/puma-treino.jpg" alt="tenis-puma">
-                <p class="titleprod">Tênis Puma Performance</p>
-                <p class="valor">R$399,90</p>
+                <img src="img/calçados/yezzi.jpg" alt="adidas yezzi boost">
+                <p class="titleprod">Adidas Yezzi boost</p>
+                <p class="valor">R$899,99</p>
             </div>
             <div class="produtos">
                 <img src="img/eletronicos/ifrut.webp" alt="celular">
@@ -103,7 +95,50 @@
                 <p class="titleprod">Playstation 5</p>
                 <p class="valor">R$3.999,99</p>
             </div>
+            <div class="produtos">
+                <img src="img/calçados/air-jordan.jpg" alt="nike air jordan">
+                <p class="titleprod">Nike Air Jordan II</p>
+                <p class="valor">R$599,99</p>
+            </div>
+            <div class="produtos">
+                <img src="img/calçados/puma-feminino.jpg">
+                <p class="titleprod">Puma feminino corrida</p>
+                <p class="valor">R$199,99</p>
+            </div>
+            <div class="produtos">
+                <img src="img/cozinha/prato-branco.jpg">
+                <p class="titleprod">Jogo de cozinha</p>
+                <p class="valor">R$199,99</p>
+            </div>
+            <div class="produtos">
+                <img src="img/eletronicos/watch.webp">
+                <p class="titleprod">Smartwatch ES80</p>
+                <p class="valor">R$239,99</p>
+            </div>
+            <div class="produtos">
+                <img src="img/eletronicos/xiaomi.jpg">
+                <p class="titleprod">Robô Aspirador Xiaomi</p>
+                <p class="valor">R$1999,99</p>
+            </div>
         </div>
+        <footer>
+            <div class="container-footer">
+                <div id="about">
+                    <img src="img/logo.png" alt="logo Tom's Jazz school">
+                    <p>Flex Shop é uma loja online dedicada a fornecer aos seus clientes a melhor experiência de compra possível. Nosso objetivo é oferecer uma ampla seleção de produtos de alta qualidade a preços acessíveis, combinados com um atendimento ao cliente excepcional. Estamos comprometidos em fornecer um serviço de primeira classe para atender às necessidades de nossos clientes. Se você tiver alguma dúvida ou precisar de assistência, nossa equipe de suporte ao cliente estará sempre à disposição para ajudá-lo.</p>
+                </div>
+                <div>
+                    <a href="">Início</a>
+                    <a href="">Mais Vendidos</a>
+                    <a href="">Quem somos?</a>
+                </div>
+                <form>
+                    <label for="email">Receba materias gratúitos no seu e-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                    <input class="button" type="button" value="Quero receber">
+                </form>
+            </div>
+        </footer>
     </main>
     <script src="script/script.js"></script>
 </body>

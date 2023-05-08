@@ -24,51 +24,44 @@ body{
 }
 
 /*header*/
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--cor03);
-    align-items: center;
-    padding: 0 1.2rem;
-    text-decoration: none;
-}
 h1{
     color: var(--cor05);
 }
-#burguer{
-    display: block;
-    justify-content: right;
-    text-align: center;
-    padding: 5px;
-}
 
-#burguer:hover{
-    cursor: pointer;
-    color: var(--cor02);
-}
-.nav-menu{
-    list-style: none;
-    display: none;
+header {
+    background-color: var(--cor03);
+    padding: 10px;
+  }
+  
+  .menu {
+    display: flex;
     flex-wrap: wrap;
-}
-.nav-menu li a{
-    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu a {
     color: var(--cor05);
-    padding:  .5em 1em;
-    font-size: 1.05em;
-}
-.nav-menu li a:hover, #bag:hover{
-    background-color: var(--cor02);
-    border-radius: 10px;
-    border-bottom: 3px solid var(--cor04);
-}
-
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .menu a:hover, .icon:hover {
+    color: var(--cor02);
+  }
+  
+  .icon {
+    display: none;
+    color: var(--cor05);
+    text-decoration: none;
+    margin-right: 20px;
+  }
 .title{
     padding: .5em;
     text-align: center;
     margin: 8px 0;
     font-size: 1.1em;
-    color: var(--cor04);
+    color: var(--cor05);
 }
 
 div.container-slides{
@@ -128,8 +121,8 @@ div.container-categoria{
     border-radius: 50%;
 }
 .imgCat{
-    width: 20vw;
-
+    width: 21vw;
+    height: 72%;
 }
 .categoria{
     max-width: 400px;
@@ -139,14 +132,18 @@ div.container-categoria{
 }
 .titleCat{
     font-size: .8em;
-    text-indent: 4px;
-    text-align: center;
-}
-.bntLink{
-    text-decoration: none;
-    color: var(--cor04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/*flex Produtos*/
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.7em;
+    padding: .55em;
+}
 div.container-produtos{
     margin: 0 auto;
     display: flex;
@@ -156,11 +153,49 @@ div.container-produtos{
 }
 div.produtos img{
     max-width: 300px;
-    height: 20vh;
+    height: 22vh;
 }
 div.produtos{
     max-width: 300px;
     max-height: 500px;
     background: var(--cor02);
     overflow: hidden;
+    border-radius: 7%;
+}
+.titleprod, .valor{
+    text-indent: .6em;
+}
+.valor{
+    padding-bottom: .2em;
+}
+
+/*rodapé*/
+footer{
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+    background-color: var(--cor03);
+    margin-top: 1em;
+}
+footer img{
+    width: 10vw;
+}
+footer p{
+    text-align: left;
+    margin-top: 1rem;
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    color: var(--cor05);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+form label{
+    font-size: 1.30rem;
+}
+form input{
+    font-size: 1.5rem;
+    margin-top: .8rem;
+    padding: .5rem;
+    width: 100%;
 }

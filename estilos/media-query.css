@@ -1,10 +1,59 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 41rem) {
-    #burguer{
-        display: none;
+@media screen and (max-width: 41rem) {
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      display: block;
     }
-    .nav-menu{
+  
+    .menu.show {
+      display: none;
+    }
+  
+    .menu a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .icon {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .imgCat{
+        height: 80%;
+    }
+    .titleCat{
+        display: block;
+        text-align: center;
+        margin-top: -5px;
+        font-size: .7em;
+    }
+  }
+
+@media screen and (min-width: 72rem) {
+    .container-footer{
         display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+    #about{
+        flex: 2;
+    }
+    footer nav{
+        flex: 1;
+    }
+    form{
+        flex: 3;
+    }
+
+    #about p{
+        font-size: 1.02rem;
+        max-width: 24rem;
+    }
+    form label{
+        font-size: 1.5rem;
     }
 }

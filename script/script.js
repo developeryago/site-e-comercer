@@ -1,12 +1,9 @@
-function clickMenu() {
-    if (itens.style.display == 'flex') {
-         itens.style.display = 'none'
+const icon = document.querySelector('.icon');
+const menu = document.querySelector('.menu');
 
-
-    } else {
-         itens.style.display = 'flex'
-    }
-}
+icon.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
 
 let cont = 1
 document.getElementById("radio1").checked = true
