@@ -4,11 +4,11 @@
     .menu {
       flex-direction: column;
       align-items: flex-start;
-      display: block;
+      display: none;
     }
   
     .menu.show {
-      display: none;
+      display: flex;
     }
   
     .menu a {

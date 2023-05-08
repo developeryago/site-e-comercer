@@ -36,14 +36,14 @@ header {
   .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   
   .menu a {
     color: var(--cor05);
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10vw;
   }
   
   .menu a:hover, .icon:hover {
@@ -130,6 +130,10 @@ div.container-categoria{
     border-radius: 15px;
     overflow: hidden;
 }
+.categoria:hover{
+    transform: translateY(-5%);
+    transition: .7s;
+}
 .titleCat{
     font-size: .8em;
     display: flex;
@@ -162,6 +166,11 @@ div.produtos{
     overflow: hidden;
     border-radius: 7%;
 }
+div.produtos:hover{
+    transform: translateY(-3%);
+    transition: 1s;
+    color: var(--cor04);
+}
 .titleprod, .valor{
     text-indent: .6em;
 }
@@ -177,7 +186,7 @@ footer{
     margin-top: 1em;
 }
 footer img{
-    width: 10vw;
+    width: 15vw;
 }
 footer p{
     text-align: left;
